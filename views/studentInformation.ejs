@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Application Form</title>
+</head>
+<body>
+
+    <form action="/submitApp" method="POST">
+      <div class="form">
+
+        <div class="padding">
+          <label for="username"><strong>Name: </strong></label>
+          <input type="text" name="studentname" id="studentname">
+          
+          <label for="email"><strong>&emsp; Email Address: </strong></label>
+          <input type="text" name="email" id="email">
+        </div>
+
+        <div class="padding">
+          <label for="year"><strong>School Year: </strong></label>
+          <input type="text" name="year" id="year">
+        </div>
+
+        <div class="padding">
+          <label for="lang"><strong>Programming Languages: </strong></label><br>
+          <textarea id="lang" name="lang" rows="2" cols="80" placeholder="Java, Python..."></textarea>
+        </div>
+
+        <div class="padding">
+          <label for="secretCodeWord"><strong>Secret Code Word for Prof Nelson: </strong></label><br>
+          <textarea id="secretCodeWord" name="secretCodeWord" rows="2" cols="80" placeholder="Enter a valid English word"></textarea>
+        </div>
+
+        <div class="padding">
+          <label for="type"><strong>Type of Position:</strong></label><br>
+          <input type="checkbox" id="position" name="position1"></textarea>
+          <label for="position1">Internship</label>          
+          <input type="checkbox" id="position2" name="position2">
+          <label for="position2">Full Time</label>
+          <input type="checkbox" id="position3" name="position3">
+          <label for="position3">Co-op</label>
+        </div>
+
+      </div>
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit Application">
+    </form>
+  <hr>
+  <a href="/">Home</a>
+</body>
+</html>

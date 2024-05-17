@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result</title>
+</head>
+<body>
+    <h1>Potential Recruits</h1>
+    <table border="1">
+        <% for (const applicant of applicants) { %>
+            <tr>
+                <td>Name: <%= applicant.studentname %><br>
+                    Email: <%= applicant.email %><br>
+                    School Year: <%= applicant.year %><br>
+                    Programming Language: <%= applicant.lang %><br>
+                    Secret Code Word in Spanish: <%= applicant.secretWord %>
+                </td>
+            </tr>
+          <% } %>
+    </table>
+</body>
+</html>
